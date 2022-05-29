@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  android:padding="16dp"
+    tools:context=".Activity_register"
+    >
+    <EditText
+        android:id="@+id/register_sdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="10dp"
+        android:hint="Số điện thoại"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:background="@drawable/type_sdt"
+
+        />
+    <Button
+        android:id="@+id/register_btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiếp Tục"
+        android:padding="16dp"
+        android:textAllCaps="false"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/register_cbKichHoat"
+        android:padding="15dp"
+        android:layout_width="0dp"
+        android:layout_weight="1.0"
+        android:layout_height="wrap_content"
+        android:text="Kích hoạt ví điện tử ngay để tận hưởng nhiều chương trình ưu đãi, giảm giá và tích điểm"
+        />
+        <ImageButton
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@color/white"
+            android:src="@drawable/help"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center"
+        >
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/black"
+
+            android:layout_weight="0.5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="HOẶC"/>
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="0dp"
+            app:dividerColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/lbottom_CircleGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/lbottom_CircleFacebook"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:src="@drawable/google"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/lbottom_CircleFacebook"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logofacebook"
+        app:tint="@null"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/lbottom_CircleGoogle"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:text="Bằng việc đăng ký, bạn đồng ý với Điều khoản Dịch vụ &amp; Chính sách bảo mật của Shoppe"/>
+
+
+
+
+
+
+
+
+</LinearLayout>

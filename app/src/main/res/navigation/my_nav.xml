@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragment_LoginUI1">
+
+    <fragment
+        android:id="@+id/fragment_LoginUI1"
+        android:name="com.example.projectshoppe.Fragment_LoginUI1"
+        android:label="fragment__login_u_i1"
+        tools:layout="@layout/fragment__login_u_i1" />
+    <fragment
+        android:id="@+id/fragment_LoginUI2"
+        android:name="com.example.projectshoppe.Fragment_LoginUI2"
+        android:label="fragment__login_u_i2"
+        tools:layout="@layout/fragment__login_u_i2" />
+</navigation>

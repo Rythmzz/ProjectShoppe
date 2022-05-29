@@ -8,6 +8,4 @@ val appModule = module {
 
     factory { MySimplePresenter(get()) }
 
-
-
 }

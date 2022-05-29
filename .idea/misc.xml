@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/buttonlogin.xml" value="0.1575" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/clickhere.xml" value="0.1575" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/custom_backgroundtop.xml" value="0.1585" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1645" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/ic_wave.xml" value="0.1585" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/ic_wave1.xml" value="0.1585" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/passtype.xml" value="0.1575" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/passtype1.xml" value="0.12" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/radiopass.xml" value="0.1575" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/drawable/type_sdt.xml" value="0.1605" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/activity_forget_pass.xml" value="0.21920289855072464" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/activity_login.xml" value="0.20572916666666666" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/activity_main.xml" value="0.2259963768115942" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/fragment1_login_ui.xml" value="0.21920289855072464" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/fragment2_login_ui.xml" value="0.2" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/fragment__login_u_i1.xml" value="0.2259963768115942" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/fragment__login_u_i2.xml" value="0.2259963768115942" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/fragment_fragment1__activity_main.xml" value="0.21920289855072464" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/login2_ui.xml" value="0.264" />
+        <entry key="..\:/Code/MyProjectAndroid/app/src/main/res/layout/login_ui.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

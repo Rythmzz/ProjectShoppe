@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff480d"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_LayoutTopHeading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraint_LayoutTop"
+        />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/Fragment_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_LayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        app:layout_constraintTop_toTopOf="@id/constraint_LayoutTopHeading"
+        app:layout_constraintBottom_toTopOf="@+id/constraint_LayoutCenter">
+
+        <ImageView
+            android:id="@+id/ltop_LogoShoppe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoshoppe"
+
+            app:layout_constraintBottom_toBottomOf="@+id/constraint_LayoutTop"
+            app:layout_constraintLeft_toLeftOf="@+id/constraint_LayoutTop"
+            app:layout_constraintRight_toRightOf="@id/constraint_LayoutTop"
+            app:layout_constraintTop_toTopOf="@+id/constraint_LayoutTop" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoppe"
+            android:textColor="#ff480d"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            app:layout_constraintTop_toBottomOf="@+id/ltop_LogoShoppe"
+            app:layout_constraintLeft_toLeftOf="@+id/constraint_LayoutTop"
+            app:layout_constraintRight_toRightOf="@id/constraint_LayoutTop"
+            app:layout_constraintBottom_toBottomOf="@id/constraint_LayoutTop"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_wave1"
+        app:layout_constraintTop_toBottomOf="@id/constraint_LayoutTop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraint_LayoutCenter"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraint_LayoutCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_LayoutTop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/constraint_LayoutBottom"
+
+        >
+
+        <TextView
+            android:id="@+id/lcenter_textLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Nhập"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/lcenter_editAccount"
+
+            />
+        <EditText
+            android:textColor="@color/white"
+            android:background="@drawable/buttonlogin"
+            android:padding="15dp"
+            android:textSize="17dp"
+
+            android:inputType="text"
+            android:id="@+id/lcenter_editAccount"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="10dp"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            app:layout_constraintTop_toBottomOf="@id/lcenter_textLogin"
+            app:layout_constraintBottom_toTopOf="@id/lcenter_ButtonLogin"
+            />
+
+        <Button
+
+            android:id="@+id/lcenter_ButtonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đăng Nhập"
+            android:textColor="#ff480d"
+            android:textAllCaps="false"
+            android:paddingHorizontal="50dp"
+
+            android:background="@drawable/passtype"
+
+
+            app:layout_constraintTop_toBottomOf="@id/lcenter_editAccount"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <TextView
+            android:id="@+id/lcenter_textRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:paddingLeft="15dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="#00ffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/lcenter_ButtonLogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/lcenter_textLoginAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập bằng Mật Khẩu"
+            android:textColor="#00ffff"
+            android:paddingRight="15dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lcenter_ButtonLogin"
+
+            />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraint_LayoutLittleBottom"
+        app:layout_constraintTop_toBottomOf="@+id/constraint_LayoutCenter"
+        app:layout_constraintBottom_toTopOf="@id/constraint_LayoutBottom"
+        android:padding="16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            >
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:dividerColor="@color/white"
+
+                android:layout_weight="0.5"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="HOẶC"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="0dp"
+                app:dividerColor="@color/white"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_LayoutBottom"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/constraint_LayoutCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lbottom_CircleGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:tint="@null"
+
+            android:src="@drawable/google"
+            app:layout_constraintTop_toTopOf="@id/constraint_LayoutBottom"
+            app:layout_constraintRight_toLeftOf="@+id/lbottom_CircleFacebook"
+            app:layout_constraintLeft_toRightOf="@+id/lbottom_CircleApple"
+
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lbottom_CircleFacebook"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logofacebook"
+            app:tint="@null"
+            app:layout_constraintTop_toTopOf="@id/constraint_LayoutBottom"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/lbottom_CircleGoogle"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lbottom_CircleApple"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoapple"
+            app:tint="@null"
+
+
+
+            app:layout_constraintTop_toTopOf="@id/constraint_LayoutBottom"
+            app:layout_constraintRight_toLeftOf="@id/lbottom_CircleGoogle"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
